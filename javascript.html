@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Implementation</title>
+    <link rel="stylesheet" href="styles.css" class="css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>Javascript implementation</h1>
+        </div>
+        <div>
+            <h2>String Methods</h2>
+            <p>String: "Designing" Press the buttons to apply methods:</p>
+            <button id="uppercase" onclick="uppercase()">To Uppercase</button>
+            <button id="lowercase " onclick="lowercase()">To lowercase</button>
+            <button id="substring" onclick="substring()">Substring</button>
+            <button id="trimstart" onclick="trimstart()">Trim Start</button>
+            <button id="trimend" onclick="trimend()">Trim End</button>
+        </div>
+        <div>
+            <h2>Number Methods</h2>
+            <p>Number: 35.67 Press the buttons to apply methods:</p>
+            <button id="string" onclick="string()">To string</button>
+            <button id="exponential " onclick="exponential()">Exponential</button>
+            <button id="fixed" onclick="fixed()">Fixed</button>
+            <button id="precision" onclick="precision()">Precision</button>
+            <button id="value" onclick="value()">Value</button>
+        </div>
+        <div>
+            <h2>Array Methods</h2>
+            <p>Array={Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday} Press the buttons to apply methods:</p>
+            <button id="length" onclick="length()">length</button>
+            <button id="tostring " onclick="tostring()">tostring</button>
+            <button id="pop" onclick="pop()">pop</button>
+            <button id="push" onclick="push()">push</button>
+            <button id="splice" onclick="splice()">splice</button>
+        </div>
+        <div>
+            <h2>Date Methods</h2>
+            <p>Date= 1 September 2023, Friday 1.00 pm Press the buttons to apply methods:</p>
+            <button id="getFullYear" onclick="getFullYear()">Full Year</button>
+            <button id="getMonth " onclick="getMonth()">Month</button>
+            <button id="getDate" onclick="getDate()">Date</button>
+            <button id="getDay" onclick="getDay()">day</button>
+            <button id="getHours" onclick="getHours()">hours</button>
+        </div>
+        <div>
+            <h2>Function Methods</h2>
+            <p>Numbers : 3,4  Press the buttons to apply methods:</p>
+            <button id="add" onclick="add()">Addition</button>
+            <button id="multiply" onclick="multiply()">Multiplication</button>
+        </div>
+    </main>
+    <script>
+        // string methods
+        let string1 = "Designing";
+
+        function uppercase() {
+            let result = string1.toUpperCase();
+            return result;
+        }
+        function lowercase() {
+            let result = string1.toLowerCase();
+            return result;
+        }
+        function substring() {
+            let result = string1.substring(5, 8);
+            return result;
+        }
+        function trimstart() {
+            let result = string1.trimstart();
+            return result;
+        }
+        function uppercase() {
+            let result = string1.trimend();
+            return result;
+        }
+
+        //number methods
+        let num = 35.67;
+
+        function string() {
+            let result = num.toString();
+            return result;
+        }
+        function exponential() {
+            let result = num.toExponential();
+            return result;
+        }
+        function fixed() {
+            let result = num.toFixed();
+            return result;
+        }
+        function precision() {
+            let result = num.toPrecision();
+            return result;
+        }
+        function value() {
+            let result = num.valueOf();
+            return result;
+        }
+
+        //array methods
+        let days = { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday };
+
+        function length() {
+            let result = days.length();
+            return result;
+        }
+        function tostring() {
+            let result = days.toString();
+            return result;
+        }
+        function push() {
+            let result = days.push("extra");
+            return result;
+        }
+        function pop() {
+            let result = days.pop();
+            return result;
+        }
+        function splice() {
+            let result = days.splice(2, 0, "extra2");
+            return result;
+        }
+
+        //date methods
+        const d = new date(2023, 8, 1, 13, 0)
+
+        function getFullYear() {
+            let result = d.getFullYear();
+            return result;
+        }
+        function getMonth() {
+            let result = d.getMonth();
+            return result;
+        }
+        function getDate() {
+            let result = days.getDate();
+            return result;
+        }
+        function getDay() {
+            let result = d.getDay();
+            return result;
+        }
+        function getHours() {
+            let result = d.getHours();
+            return result;
+        }
+
+        //function methods
+        let num1 = 3, num2 = 4;
+        function add() {
+            let result = num1 + num2;
+            return result;
+        }
+        function multiply() {
+            let result = num1 * num2;
+            return result;
+        }
+    </script>
+</body>
+
+</html>

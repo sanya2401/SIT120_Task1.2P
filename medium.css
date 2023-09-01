@@ -1,0 +1,21 @@
+@media  only screen and (max-width:900px)  {
+    
+    body{
+        font-size: 12px;
+    }
+
+    .mainhead{
+        font-size: 2rem ;
+    }
+    .subhead{
+        font-size: 1.3rem;
+        margin: 0.5rem auto;
+    }
+    .imgHead{
+        font-size: 1.05rem;
+    }
+    header{
+        width:100vw;
+        height:45vh;
+    }
+}
